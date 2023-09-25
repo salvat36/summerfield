@@ -1,0 +1,17 @@
+
+#header {
+  background-color: #37474f;
+}
+
+#navlink {
+  list-style-type: none;
+}
+
+#navlink li a {
+  color: white;
+  text-decoration: none;
+}
+
+#navlink li a:hover {
+  opacity: 0.75;
+}
