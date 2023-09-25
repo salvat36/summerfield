@@ -1,9 +1,14 @@
 import React from 'react';
+import '../App';
 import './Navbar.css';
+
 
 function Navbar() {
   return (
     <header id="header">
+      <div class="logo">
+        <a href="../App.js"><img src="../../public/logo.png" alt="company-logo"></img></a>
+      </div>
       <nav id="navbar">
         <ul>
           <li><a href="#">Home</a></li>
