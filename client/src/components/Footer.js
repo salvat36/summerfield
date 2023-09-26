@@ -31,19 +31,19 @@ function Footer() {
           </li>
 
           <li>
-            <a href="https://twitter.com/">
+            <a href="https://twitter.com" target="_blank" rel="noreferrer">
               <img src={process.env.PUBLIC_URL + "/twitter-48.svg"} alt="Twitter Icon" id="twitterIcon"/>
             </a>
           </li>
 
           <li>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
               <img src={process.env.PUBLIC_URL + "/instagram-48.svg"} alt="Instagram Icon" id="instagramIcon"/>
             </a>
           </li>
 
           <li>
-            <a href="https://www.facebook.com/">
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
               <img src={process.env.PUBLIC_URL + "/facebook-48.svg"} alt="Facebook Icon" id="facebookIcon"/>
             </a>
           </li>
