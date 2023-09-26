@@ -14,7 +14,7 @@ function Footer() {
       </button>
 
       <div id="socialsAndCopyright">
-        
+
         <ul id="socials">
           <li>
             <a href="../App.js">
@@ -23,13 +23,13 @@ function Footer() {
           </li>
 
           <li>
-            <a href="#">
+            <a href="https://twitter.com/">
               <img src="" alt="Twitter Icon" />
             </a>
           </li>
 
           <li>
-            <a href="#">
+            <a href="https://www.instagram.com/">
               <img src="" alt="Instagram Icon" />
             </a>
           </li>
