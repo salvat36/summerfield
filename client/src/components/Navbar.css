@@ -7,6 +7,11 @@
   align-items: center;
 }
 
+#header a {
+  color: white;
+  text-decoration: none;
+}
+
 #navlink {
   display: flex;
   list-style-type: none;
@@ -18,8 +23,6 @@
 }
 
 #navlink li a {
-  color: white;
-  text-decoration: none;
   font-size: 1.15rem;
 }
 

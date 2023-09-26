@@ -1,11 +1,12 @@
 import React from 'react'
+import './Footer.css';
 
 function Footer() {
   return (
     <footer>
       <div id='mailingList'>
-        <p>For updated News & Events</p>
-        <p>Join our mailing list <a href="">here</a></p>
+        <div id='mailIcon'><img src="" alt="mail icon" /></div>
+        <p>For updated News & Events <br/> Join our mailing list <a href="#">here</a></p>
       </div>
 
       <button id="toTopBtn">
