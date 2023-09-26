@@ -2,6 +2,12 @@
   "dependencies": {
     "pg": "^8.11.3",
     "pg-hstore": "^2.3.4",
-    "sequelize": "^6.33.0"
+    "sequelize": "^6.33.0",
+    "axios": "^1.5.0",
+    "react-router-dom": "^6.16.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
   }
 }
+
