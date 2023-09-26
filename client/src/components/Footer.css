@@ -4,6 +4,10 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 footer a {
@@ -24,5 +28,5 @@ footer a:hover {
 }
 
 footer ul {
-  
+
 }
