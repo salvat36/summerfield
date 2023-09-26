@@ -7,7 +7,7 @@ function Navbar() {
     <>
       <header id="header">
         <div class="logo">
-          <a href="../App.js"><img src="../../public/logo.png" alt="company-logo"></img></a>
+          <a href="../App.js"><img src="../../public/logo.png" alt="company logo"></img></a>
         </div>
         <nav id="navbar">
           <ul id="navlink">

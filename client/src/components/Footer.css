@@ -50,6 +50,19 @@ footer a:hover {
 
 #socials {
   display: flex;
-  text-align: center;
+  align-items: center;
   list-style-type: none;
+  margin-bottom: 0;
+}
+
+
+#twitterIcon {
+  border-radius: 5px;
+  height: 35px;
+  width: 35px;
+  margin: 0 6px;
+}
+
+#copyright {
+  margin: 0 0 1rem 0;
 }
