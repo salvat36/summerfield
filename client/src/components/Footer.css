@@ -21,7 +21,8 @@ footer a:hover {
 }
 
 #mailingList {
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 #mailingList a {
