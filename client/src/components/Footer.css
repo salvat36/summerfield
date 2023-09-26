@@ -27,6 +27,13 @@ footer a:hover {
   text-decoration: underline;
 }
 
+#toTopBtn {
+  border-radius: 10px;
+  height: 1.75rem;
+  width: 10rem;
+  font-weight: bold;
+}
+
 footer ul {
 
 }
