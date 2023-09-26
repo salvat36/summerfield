@@ -12,6 +12,10 @@
   text-decoration: none;
 }
 
+#header a:hover {
+  opacity: 0.75;
+}
+
 #navlink {
   display: flex;
   list-style-type: none;
