@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
       <div id='mailingList'>
-        <div id='mailIcon'><img src="" alt="mail icon" /></div>
+        <div id='mailIcon'><img src={process.env.PUBLIC_URL + "/mail-48.png"} alt="mail icon" /></div>
         <div>For updated News & Events <br/> Join our mailing list <a href="#">here</a></div>
       </div>
 
@@ -24,19 +24,19 @@ function Footer() {
 
           <li>
             <a href="https://twitter.com/">
-              <img src="../../public/twitter-icon-96.svg" alt="Twitter Icon" />
+              <img src={process.env.PUBLIC_URL + "/twitter-48.svg"} alt="Twitter Icon" />
             </a>
           </li>
 
           <li>
             <a href="https://www.instagram.com/">
-              <img src="../../public/instagram-icon-96.svg" alt="Instagram Icon" />
+              <img src={process.env.PUBLIC_URL + "/instagram-48.svg"} alt="Instagram Icon" />
             </a>
           </li>
 
           <li>
             <a href="https://www.facebook.com/">
-              <img src={process.env.PUBLIC_URL + "/facebook-icon-96.svg"} alt="Facebook Icon" />
+              <img src={process.env.PUBLIC_URL + "/facebook-48.svg"} alt="Facebook Icon" />
             </a>
           </li>
         </ul>
