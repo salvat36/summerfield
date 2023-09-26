@@ -13,12 +13,39 @@ function Footer() {
         Back to Top
       </button>
 
-      <ul id="socials">
-        <li><a href="../App.js"><img src="" alt="company logo" /></a></li>
-        <li><a href="#"><img src="" alt="Twitter Icon" /></a></li>
-        <li><a href="#"><img src="" alt="Instagram Icon" /></a></li>
-        <li><a href="#"><img src="" alt="Facebook Icon" /></a></li>
-      </ul>
+      <div id="socialsAndCopyright">
+        
+        <ul id="socials">
+          <li>
+            <a href="../App.js">
+              <img src="" alt="company logo" />
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="" alt="Twitter Icon" />
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="" alt="Instagram Icon" />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/">
+              <img src="" alt="Facebook Icon" />
+            </a>
+          </li>
+        </ul>
+
+        <div id='copyright'>
+            &copy; SummerField Stage Co.
+        </div>
+      </div>
+
     </footer>
   )
 }

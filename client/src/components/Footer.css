@@ -1,6 +1,7 @@
 footer {
   background-color: #412728;
   color: white;
+  height: 9rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -28,12 +29,21 @@ footer a:hover {
 }
 
 #toTopBtn {
+  background-color: #00C9C8;
   border-radius: 10px;
   height: 1.75rem;
   width: 10rem;
   font-weight: bold;
 }
 
-footer ul {
-
+#toTopBtn:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: white;
 }
+
+#socialsAndCopyright {
+  display: table-column;
+  text-align: center;
+}
+
