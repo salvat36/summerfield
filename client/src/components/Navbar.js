@@ -29,7 +29,7 @@ function Navbar() {
           </ul>
         </nav>
       </header>
-      <div id="header-separator"></div>  
+      <div id="headerSeparator"></div>  
     </>
   )
 }
