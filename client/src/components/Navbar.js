@@ -6,8 +6,8 @@ function Navbar() {
   return (
     <>
       <header id="header">
-        <div class="logo">
-          <a href="../App.js"><img src="../../public/logo.png" alt="company-logo"></img></a>
+        <div>
+          <a href="../App.js"><img src={process.env.PUBLIC_URL + "/summerfield-logo.png"} alt="summerfield logo" class="navLogo"></img></a>
         </div>
         <nav id="navbar">
           <ul id="navlink">
@@ -29,7 +29,7 @@ function Navbar() {
           </ul>
         </nav>
       </header>
-      <div id="header-separator"></div>  
+      <div id="headerSeparator"></div>  
     </>
   )
 }

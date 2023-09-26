@@ -1,10 +1,24 @@
-
 #header {
   background-color: #412728;
-  height: 70px;
+  height: 6rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+#header a {
+  color: white;
+  text-decoration: none;
+}
+
+.navLogo {
+  border-radius: 15px;
+  width: 20rem;
+  margin-right: 6px;
+}
+
+.navLogo:hover {
+  filter: brightness(2);
 }
 
 #navlink {
@@ -18,8 +32,6 @@
 }
 
 #navlink li a {
-  color: white;
-  text-decoration: none;
   font-size: 1.15rem;
 }
 
@@ -28,7 +40,7 @@
   text-decoration: underline;
 }
 
-#header-separator {
+#headerSeparator {
   height: 0.25rem;
   background-color: #00C9C8;
 }
