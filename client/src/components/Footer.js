@@ -24,19 +24,19 @@ function Footer() {
 
           <li>
             <a href="https://twitter.com/">
-              <img src="" alt="Twitter Icon" />
+              <img src="../../public/twitter-icon-96.svg" alt="Twitter Icon" />
             </a>
           </li>
 
           <li>
             <a href="https://www.instagram.com/">
-              <img src="" alt="Instagram Icon" />
+              <img src="../../public/instagram-icon-96.svg" alt="Instagram Icon" />
             </a>
           </li>
 
           <li>
             <a href="https://www.facebook.com/">
-              <img src="" alt="Facebook Icon" />
+              <img src={process.env.PUBLIC_URL + "/facebook-icon-96.svg"} alt="Facebook Icon" />
             </a>
           </li>
         </ul>
