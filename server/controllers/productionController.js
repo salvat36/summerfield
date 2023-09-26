@@ -1,10 +1,18 @@
-const Production = require('../models').Production;
+const { Production } = require('../models');
 
 exports.getAllProductions = async (req, res) => {
-    Production.findAll()
-    .then(prods => res.status(200).send({
-        success: 'true',
+    try {
+    const prods = await Production.findAll();
+    res.status(200).json({
+        success: true,
         message: 'Productions retrieved successfully',
         prods,
-    }));
-}
+    });
+    } catch (error) {
+    console.error(error);
+    res.status(500).json({
+        success: false,
+        message: 'Internal server error',
+    });
+    }
+};
