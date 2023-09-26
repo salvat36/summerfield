@@ -25,6 +25,16 @@ footer a:hover {
   align-items: center;
 }
 
+#mailIcon {
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+#mailIcon:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
 #mailingList a {
   text-decoration: underline;
 }

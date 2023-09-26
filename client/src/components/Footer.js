@@ -2,14 +2,22 @@ import React from 'react'
 import './Footer.css';
 
 function Footer() {
+
+  const goTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <footer>
       <div id='mailingList'>
-        <div id='mailIcon'><img src={process.env.PUBLIC_URL + "/mail-48.png"} alt="mail icon" /></div>
+        <div><img src={process.env.PUBLIC_URL + "/mail-48.png"} alt="mail icon" id='mailIcon'/></div>
         <div>For updated News & Events <br/> Join our mailing list <a href="#">here</a></div>
       </div>
 
-      <button id="toTopBtn">
+      <button id="toTopBtn" onClick={goTop}>
         Back to Top
       </button>
 
