@@ -13,12 +13,12 @@
 
 .navLogo {
   border-radius: 15px;
-  width: 10rem;
+  width: 20rem;
   margin-right: 6px;
 }
 
 .navLogo:hover {
-  filter: brightness(1.75);
+  filter: brightness(2);
 }
 
 #navlink {

@@ -14,6 +14,7 @@ function Footer() {
     <footer>
       <div id='mailingList'>
         <div><img src={process.env.PUBLIC_URL + "/mail-48.png"} alt="mail icon" id='mailIcon'/></div>
+        
         <div>For updated News & Events <br/> Join our mailing list <a href="#">here</a></div>
       </div>
 
@@ -26,25 +27,25 @@ function Footer() {
         <ul id="socials">
           <li>
             <a href="../App.js">
-              <img src={process.env.PUBLIC_URL + "/summerfield-logo.png"} alt="summerfield logo" class="footerLogo"/>
+              <img src={process.env.PUBLIC_URL + "/summerfield-logo.png"} alt="summerfield logo" className="footerLogo"/>
             </a>
           </li>
 
           <li>
             <a href="https://twitter.com" target="_blank" rel="noreferrer">
-              <img src={process.env.PUBLIC_URL + "/twitter-48.svg"} alt="Twitter Icon" id="twitterIcon"/>
+              <img src={process.env.PUBLIC_URL + "/twitter-48.svg"} alt="Twitter Icon" className="socialIcon" id="twitterIcon"/>
             </a>
           </li>
 
           <li>
             <a href="https://www.instagram.com/summerfieldstagecompany/" target="_blank" rel="noreferrer">
-              <img src={process.env.PUBLIC_URL + "/instagram-48.svg"} alt="Instagram Icon" id="instagramIcon"/>
+              <img src={process.env.PUBLIC_URL + "/instagram-48.svg"} alt="Instagram Icon" className="socialIcon" id="instagramIcon"/>
             </a>
           </li>
 
           <li>
             <a href="https://www.facebook.com/summerfieldstage/" target="_blank" rel="noreferrer">
-              <img src={process.env.PUBLIC_URL + "/facebook-48.svg"} alt="Facebook Icon" id="facebookIcon"/>
+              <img src={process.env.PUBLIC_URL + "/facebook-48.svg"} alt="Facebook Icon" className="socialIcon" id="facebookIcon"/>
             </a>
           </li>
         </ul>

@@ -16,7 +16,7 @@ footer a {
   text-decoration: none;
 }
 
-footer a:hover {
+.socialIcon:hover {
   opacity: 0.75;
 }
 
@@ -39,16 +39,22 @@ footer a:hover {
   text-decoration: underline;
 }
 
+#mailingList a:hover {
+  opacity: 0.75;
+}
+
 #toTopBtn {
   background-color: #00C9C8;
   border-radius: 10px;
   height: 1.75rem;
-  width: 10rem;
+  width: 9rem;
+  font-size: 16px;
   font-weight: bold;
 }
 
 #toTopBtn:hover {
   cursor: pointer;
+  font-size: 18px;
   scale: 1.1;
   background-color: white;
 }
@@ -72,7 +78,7 @@ footer a:hover {
 }
 
 .footerLogo:hover {
-  filter: brightness(1.75);
+  filter: brightness(2);
 }
 
 #twitterIcon {
