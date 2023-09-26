@@ -50,7 +50,7 @@ function Footer() {
         </ul>
 
         <div id='copyright'>
-            &copy; SummerField Stage Co.
+            &copy;{(new Date().getFullYear())} SummerField Stage Co.
         </div>
       </div>
 
