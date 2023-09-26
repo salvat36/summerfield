@@ -1,9 +1,28 @@
 footer {
   background-color: #412728;
   color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 footer a {
   color: white;
   text-decoration: none;
+}
+
+footer a:hover {
+  opacity: 0.75;
+}
+
+#mailingList {
+  display: inline-block;
+}
+
+#mailingList a {
+  text-decoration: underline;
+}
+
+footer ul {
+  
 }

@@ -6,7 +6,7 @@ function Footer() {
     <footer>
       <div id='mailingList'>
         <div id='mailIcon'><img src="" alt="mail icon" /></div>
-        <p>For updated News & Events <br/> Join our mailing list <a href="#">here</a></p>
+        <div>For updated News & Events <br/> Join our mailing list <a href="#">here</a></div>
       </div>
 
       <button id="toTopBtn">
@@ -15,9 +15,9 @@ function Footer() {
 
       <ul id="socials">
         <li><a href="../App.js"><img src="" alt="company logo" /></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+        <li><a href="#"><img src="" alt="Twitter Icon" /></a></li>
+        <li><a href="#"><img src="" alt="Instagram Icon" /></a></li>
+        <li><a href="#"><img src="" alt="Facebook Icon" /></a></li>
       </ul>
     </footer>
   )
