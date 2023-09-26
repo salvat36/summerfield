@@ -7,7 +7,7 @@ function Navbar() {
     <>
       <header id="header">
         <div>
-          <a href="../App.js"><img src={process.env.PUBLIC_URL + "/summerfield-logo.png"} alt="summerfield logo" class="logo"></img></a>
+          <a href="../App.js"><img src={process.env.PUBLIC_URL + "/summerfield-logo.png"} alt="summerfield logo" class="navLogo"></img></a>
         </div>
         <nav id="navbar">
           <ul id="navlink">

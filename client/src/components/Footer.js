@@ -26,7 +26,7 @@ function Footer() {
         <ul id="socials">
           <li>
             <a href="../App.js">
-              <img src={process.env.PUBLIC_URL + "/summerfield-logo.png"} alt="summerfield logo" class="logo"/>
+              <img src={process.env.PUBLIC_URL + "/summerfield-logo.png"} alt="summerfield logo" class="footerLogo"/>
             </a>
           </li>
 
