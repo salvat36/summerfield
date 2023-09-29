@@ -1,20 +1,31 @@
-'use strict';
-const { Model } = require('sequelize');
+import sequelize from "index.js"
 
-module.exports = (sequelize, DataTypes) => {
-  class Production extends Model {
-    static associate(models) {
-      // Define associations here, if needed.
-    }
-  }
-  Production.init(
-    {
-      title: DataTypes.STRING
+const { Sequelize, DataTypes } = require('sequelize');
+
+const Production = sequelize.define('Production', {
+    title: {
+        type: DataTypes.STRING,
+        allowNull: false
+    }, 
+    description: {
+        type: DataTypes.STRING,
     },
-    {
-      sequelize,
-      modelName: 'Production',
+    startDate: {
+        type: DataTypes.DATE,
+    },
+    endDate: {
+        type: DataTypes.DATE,
+    },
+    status: {
+        type: DataTypes.STRING
+    },
+    price: {
+        type: DataTypes.FLOAT
+    },
+    ticketLink: {
+        type: DataTypes.STRING
+    },
+    flyer: {
+        type: DataTypes.STRING
     }
-  );
-  return Production;
-};
+});
