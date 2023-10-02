@@ -4,15 +4,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 200vh;
   padding-left: 3rem;
   padding-right: 3rem;
 }
 
 #topImageContainer {
-  background-color: #a0e00c;
+  background-image: url('/home/salvat/group_projects/summerfield/client/public/landingPageTestPic.jpg');
   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   width: 100vw;
   margin-top: 3rem;
@@ -28,6 +30,7 @@
 #introText {
   background-color: rgb(242, 142, 11);
   text-align: center;
+  font-size: 72px;
 }
 
 #topTextRight {
@@ -35,15 +38,14 @@
   height: 80%;
   width: 40%;
   padding: 1rem;
-}
-
-#topTextRight li {
   text-align: center;
 }
 
 #bottomContainer {
   background-color: #a0e00c;
   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   width: 100vw;
 }
@@ -55,6 +57,12 @@
   height: 80%;
   width: 40%;
   padding: 1rem;
+  text-align: center;
+}
+
+#newsImage {
+  height: 200px;
+  width: 200px;
 }
 
 #bottomRight {
@@ -62,4 +70,5 @@
   height: 80%;
   width: 40%;
   padding: 1rem;
+  text-align: center;
 }
