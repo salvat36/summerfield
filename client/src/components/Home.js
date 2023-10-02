@@ -9,11 +9,11 @@ function Home() {
           <h1 id="introText"> Welcome To The Stage </h1>
         </div>
         <div id="topTextRight">
-          <h2>Why?</h2>
+          <h2 class='www'>Why?</h2>
           <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
-          <h2>When?</h2>
+          <h2 class='www'>When?</h2>
           <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
-          <h2>Who?</h2>
+          <h2 class='www'>Who?</h2>
           <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
         </div>
       </div>
