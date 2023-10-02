@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Production.hasMany(models.Staff, { as: 'Staff' });
+      this.hasMany(models.Staff, { as: 'Staff' });
     }
   }
   Production.init({
