@@ -13,7 +13,7 @@
 #topImageContainer {
   background-color: #a0e00c;
   display: flex;
-  height: 50vh;
+  height: 100vh;
   width: 100vw;
   margin-top: 3rem;
 }
@@ -44,7 +44,7 @@
 #bottomContainer {
   background-color: #a0e00c;
   display: flex;
-  height: 50vh;
+  height: 100vh;
   width: 100vw;
 }
 
