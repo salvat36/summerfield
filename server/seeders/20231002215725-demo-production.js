@@ -3,7 +3,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    await queryInterface.bulkInsert('productions', [{
+    await queryInterface.bulkInsert('Productions', [{
       title: 'Production 1',
       createdAt: new Date(),
       updatedAt: new Date()
@@ -20,7 +20,7 @@ module.exports = {
   },
 
   async down (queryInterface, Sequelize) {
-    await queryInterface.bulkDelete('productions', null, {});
+    await queryInterface.bulkDelete('Productions', null, {});
     /**
      * Add commands to revert seed here.
      *
