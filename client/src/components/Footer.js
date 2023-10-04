@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Footer.css';
 
 function Footer() {
@@ -13,9 +14,13 @@ function Footer() {
   return (
     <footer>
       <div id='mailingList'>
-        <div><img src={process.env.PUBLIC_URL + "/mail-48.png"} alt="mail icon" id='mailIcon'/></div>
+        <div>
+          <img src={process.env.PUBLIC_URL + "/mail-48.png"} alt="mail icon" id='mailIcon'/>
+        </div>
         
-        <div>For updated News & Events <br/> Join our mailing list <a href="#">here</a></div>
+        <div>For updated News & Events <br/> Join our mailing list 
+          <a href="#">here</a>
+        </div>
       </div>
 
       <button id="toTopBtn" onClick={goTop}>
@@ -26,9 +31,9 @@ function Footer() {
 
         <ul id="socials">
           <li>
-            <a href="../App.js">
+            <Link to="/">
               <img src={process.env.PUBLIC_URL + "/summerfield-logo.png"} alt="summerfield logo" className="footerLogo"/>
-            </a>
+            </Link>
           </li>
 
           <li>
