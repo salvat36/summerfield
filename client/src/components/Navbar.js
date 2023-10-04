@@ -14,19 +14,19 @@ function Navbar() {
         <nav id="navbar">
           <ul id="navlink">
             <li>
-              <a href="../App.js">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#">Volunteer</a>
+              <Link to="/volunteer">Volunteer</Link>
             </li>
             <li>
-              <a href="#">Audition</a>
+              <Link to="/audition">Audition</Link>
             </li>
             <li>
-              <a href="#">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="#">Donate</a>
+              <Link to="/donate">Donate</Link>
             </li>
           </ul>
         </nav>
