@@ -9,7 +9,9 @@ function Navbar() {
     <>
       <header id="header">
         <div>
-          <a href="../App.js"><img src={process.env.PUBLIC_URL + "/summerfield-logo.png"} alt="summerfield logo" class="navLogo"></img></a>
+          <Link to="/">
+            <img src={process.env.PUBLIC_URL + "/summerfield-logo.png"} alt="summerfield logo" class="navLogo"></img>
+          </Link>
         </div>
         <nav id="navbar">
           <ul id="navlink">
