@@ -33,12 +33,18 @@ function About() {
           <h2>Founders</h2>
 
           <div className="alvino-container">
+
+            <img src={process.env.PUBLIC_URL + "/media/alvino-headshot.jpg"} alt="headshot of Amy Avlino" />
+
             <h3>Amy Alvino</h3>
 
             <p>Amy Alvino is one of the proud founders of Summerfield Stage Company. Having performed on stages all over the country, she is thrilled to be back on her home turf and making theatre magic in Summerfield. Local credits include Sound of Music (Elsa Shraeder, Creative Greensboro), Elvis: The Musical (Dixie, Winston Salem Theatre Alliance). NYC & Regional credits include: Dream Street (Original Cast Off-Broadway Cast, Laura/Cassie), Urinetown (Hope Cladwell, SBP). Titanic (Signature Theatre: Ensemble/Female Swing), South Pacific (Nellie,Chalice Theatre), The Addams Family (Morticia, Temple Theatre), Titanic: In Concert (Caroline, 42nd Street Moon), Jesus Christ Superstar (ensemble, ROLT), Passion (Ensemble, Custom Made Theatre), Fiorello (Ensemble, 42nd Street Moon), All Shook Up (Matilda Hyde, Yorktown Stage), A Christmas Carol (Sally/Charwoman, Yorktown Stage). Amy studied at Elon University and T. Schreiber Studio Acting Conservatory. She was also a board member for Ray of Light Theatre in San Francisco and an active member of St. Bart's Players in NYC.</p>
           </div>
 
           <div className="rodriguez-container">
+
+            <img src={process.env.PUBLIC_URL + "/media/rodriguez-headshot.jpg"} alt="headshot of Elyse Rodriguez" />
+
             <h3>Elyse Rodriguez</h3>
 
             <p>Elyse Rodriguez is the co-founder of Summerfield Stage Company. Elyse wears many hats - she's a Speech-Language Pathologist at Pearce Elementary and Guilford Elementary and privately with Pediatric Speech & Language Services, a drama teacher through Drama Kids of the Triad, a film actor represented by Talent One, and a theatre actor involved with various companies in the Triad. Recent favorite roles include Blanche DuBois in A Streetcar Named Desire and Tom Wingfield in The Glass Menagerie (Camel City Playhouse), Helena in A Midsummer Night's Dream (Spirit Gum Theatre Company), and Ouiser in Steel Magnolias and Scuttle in The Little Mermaid (Kernersville Little Theatre). Elyse holds an MA in Speech-Language Pathology from UNCG, a BFA in Acting from Elon University, and has a graduate certificate in Early Childhood Mental Health from UNCC. In her spare time, you can find her taking and posting endless pictures of her Akita, Sybbie.</p>
