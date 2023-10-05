@@ -33,6 +33,7 @@ function Home() {
         <div id="bottomLeft">
           <div id="latestNews">
             <h2>Latest News:</h2>
+            <div id="headerSeparator"></div>
             <p>Upcoming Auditions for XYZ Production \n Roles Available - 15</p>
             <img
               id="newsImage"
@@ -47,21 +48,28 @@ function Home() {
           </div>
         </div>
         <div id="bottomRight">
-            <h2>Upcoming Productions:</h2>
+          <h2>Upcoming Productions:</h2>
+          <div id="headerSeparator"></div>
           <div id="upcomingProductions">
             <div class="production">
-              <h3>THE TITLE VARIABLE HERE </h3>
-              <p>DATE VARIABLE HERE </p>
+              <div class="productionDetails">
+                <h3>THE TITLE VARIABLE HERE </h3>
+                <p>DATE VARIABLE HERE </p>
+              </div>
               <button class="ticketBtn">Buy Tickets</button>
             </div>
             <div class="production">
-              <h3>THE TITLE VARIABLE HERE </h3>
-              <p>DATE VARIABLE HERE </p>
+              <div class="productionDetails">
+                <h3>THE TITLE VARIABLE HERE </h3>
+                <p>DATE VARIABLE HERE </p>
+              </div>
               <button class="ticketBtn">Buy Tickets</button>
             </div>
             <div class="production">
-              <h3>THE TITLE VARIABLE HERE </h3>
-              <p>DATE VARIABLE HERE </p>
+              <div class="productionDetails">
+                <h3>THE TITLE VARIABLE HERE </h3>
+                <p>DATE VARIABLE HERE </p>
+              </div>
               <button class="ticketBtn">Buy Tickets</button>
             </div>
           </div>
