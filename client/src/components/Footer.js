@@ -15,7 +15,7 @@ function Footer() {
     <footer>
       <div id='mailingList'>
         <div>
-          <img src={process.env.PUBLIC_URL + "/mail-48.png"} alt="mail icon" id='mailIcon'/>
+          <img src={process.env.PUBLIC_URL + "media/mail-48.png"} alt="mail icon" id='mailIcon'/>
         </div>
         
         <div>For updated News & Events <br/> Join our mailing list <a href="#">here</a></div>
@@ -31,25 +31,25 @@ function Footer() {
         <ul id="socials">
           <li>
             <Link to="/">
-              <img src={process.env.PUBLIC_URL + "/summerfield-logo.png"} alt="summerfield logo" className="footerLogo"/>
+              <img src={process.env.PUBLIC_URL + "media/summerfield-logo.png"} alt="summerfield logo" className="footerLogo"/>
             </Link>
           </li>
 
           <li>
             <a href="https://twitter.com" target="_blank" rel="noreferrer">
-              <img src={process.env.PUBLIC_URL + "/twitter-48.svg"} alt="Twitter Icon" className="socialIcon" id="twitterIcon"/>
+              <img src={process.env.PUBLIC_URL + "media/twitter-48.svg"} alt="Twitter Icon" className="socialIcon" id="twitterIcon"/>
             </a>
           </li>
 
           <li>
             <a href="https://www.instagram.com/summerfieldstagecompany/" target="_blank" rel="noreferrer">
-              <img src={process.env.PUBLIC_URL + "/instagram-48.svg"} alt="Instagram Icon" className="socialIcon" id="instagramIcon"/>
+              <img src={process.env.PUBLIC_URL + "media/instagram-48.svg"} alt="Instagram Icon" className="socialIcon" id="instagramIcon"/>
             </a>
           </li>
 
           <li>
             <a href="https://www.facebook.com/summerfieldstage/" target="_blank" rel="noreferrer">
-              <img src={process.env.PUBLIC_URL + "/facebook-48.svg"} alt="Facebook Icon" className="socialIcon" id="facebookIcon"/>
+              <img src={process.env.PUBLIC_URL + "media/facebook-48.svg"} alt="Facebook Icon" className="socialIcon" id="facebookIcon"/>
             </a>
           </li>
         </ul>
