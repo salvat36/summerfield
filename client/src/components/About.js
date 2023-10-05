@@ -18,10 +18,15 @@ function About() {
         <div className="col-2">
 
           <div className="col-2--content">
-            <p>Through our commitment to deep learning, effective communication, and unwavering ethics in the arts, we aim to break down barriers and bridge gaps, making the arts accessible to all. We actively engage with our community, collaborating with local artists, schools, and organizations to nurture creativity and celebrate our shared humanity. We are not just a theater; we are a gathering place for all who seek connection, inspiration, and the shared joy of live performance.</p>
 
             <h2>Our Mission</h2>
+
+            <p>Through our commitment to deep learning, effective communication, and unwavering ethics in the arts, we aim to break down barriers and bridge gaps, making the arts accessible to all. We actively engage with our community, collaborating with local artists, schools, and organizations to nurture creativity and celebrate our shared humanity. We are not just a theater; we are a gathering place for all who seek connection, inspiration, and the shared joy of live performance.</p>
+
           </div>
+
+          <img src={process.env.PUBLIC_URL + "/media/St-Patricks-Cabaret.jpg"} alt="the St.Patrick's Cabaret cast" />
+
         </div>
 
         <div className="col-3">
