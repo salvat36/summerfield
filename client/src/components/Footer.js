@@ -18,9 +18,8 @@ function Footer() {
           <img src={process.env.PUBLIC_URL + "/mail-48.png"} alt="mail icon" id='mailIcon'/>
         </div>
         
-        <div>For updated News & Events <br/> Join our mailing list 
-          <a href="#">here</a>
-        </div>
+        <div>For updated News & Events <br/> Join our mailing list <a href="#">here</a></div>
+        
       </div>
 
       <button id="toTopBtn" onClick={goTop}>
