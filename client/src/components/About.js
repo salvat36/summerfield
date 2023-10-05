@@ -4,6 +4,10 @@ import './About.css';
 function About() {
   return (
     <>
+      <blockquote>
+        <p><em>&#8220;We are not just a theater; we are a gathering place for all who seek connection, inspiration, and the shared joy of live performance.&#8221;</em></p>
+      </blockquote>
+
       <div className="col-container">
         <div className="col-1">
           <img src={process.env.PUBLIC_URL + "/media/Murder_Mystery.jpg"} alt="the Murder Mystery cast" />
