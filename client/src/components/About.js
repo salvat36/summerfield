@@ -5,19 +5,26 @@ function About() {
   return (
     <>
       <div className="col-container">
-        <div className="row-1">
-          <h2>Bringing the Community Together</h2>
+        <div className="col-1">
+          <img src={process.env.PUBLIC_URL + "/media/Murder_Mystery.jpg"} alt="the Murder Mystery cast" />
 
-          <p>At SummerField, our mission is to be a vibrant hub for the arts, where the magic of storytelling and the power of live theater inspire, challenge, and unite our diverse community. We believe in the transformative potential of the stage to foster empathy, provoke thought, and ignite conversations that transcend boundaries.</p>
+          <div className="col-1--content">
+            <h2>Bringing the Community Together</h2>
+
+            <p>At SummerField, our mission is to be a vibrant hub for the arts, where the magic of storytelling and the power of live theater inspire, challenge, and unite our diverse community. We believe in the transformative potential of the stage to foster empathy, provoke thought, and ignite conversations that transcend boundaries.</p>
+          </div>
         </div>
 
-        <div className="row-2">
-          <h2>Our Mission</h2>
+        <div className="col-2">
 
-          <p>Through our commitment to deep learning, effective communication, and unwavering ethics in the arts, we aim to break down barriers and bridge gaps, making the arts accessible to all. We actively engage with our community, collaborating with local artists, schools, and organizations to nurture creativity and celebrate our shared humanity. We are not just a theater; we are a gathering place for all who seek connection, inspiration, and the shared joy of live performance.</p>
+          <div className="col-2--content">
+            <p>Through our commitment to deep learning, effective communication, and unwavering ethics in the arts, we aim to break down barriers and bridge gaps, making the arts accessible to all. We actively engage with our community, collaborating with local artists, schools, and organizations to nurture creativity and celebrate our shared humanity. We are not just a theater; we are a gathering place for all who seek connection, inspiration, and the shared joy of live performance.</p>
+
+            <h2>Our Mission</h2>
+          </div>
         </div>
 
-        <div className="row-3">
+        <div className="col-3">
           <h2>Founders</h2>
 
           <div className="alvino-container">
