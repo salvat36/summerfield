@@ -10,7 +10,7 @@ function Navbar() {
       <header id="header">
         <div>
           <Link to="/">
-            <img src={process.env.PUBLIC_URL + "/summerfield-logo.png"} alt="summerfield logo" class="navLogo"></img>
+            <img src={process.env.PUBLIC_URL + "/media/summerfield-logo.png"} alt="summerfield logo" class="navLogo"></img>
           </Link>
         </div>
         <nav id="navbar">
