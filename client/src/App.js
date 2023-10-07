@@ -1,12 +1,12 @@
 import './App.css'
 import Navbar from './components/individualComponents/components/Navbar'
 import Footer from './components/individualComponents/components/Footer'
-import About from './components/pages/pages/About'
-import Home from './components/pages/pages/Home'
-import Volunteer from './components/pages/pages/Volunteer'
-import Audition from './components/pages/pages/Audition'
-import Donate from './components/pages/pages/Donate'
-import Contact from './components/pages/pages/Contact'
+import About from './components/pages/Pages/About'
+import Home from './components/pages/Pages/Home'
+import Volunteer from './components/pages/Pages/Volunteer'
+import Audition from './components/pages/Pages/Audition'
+import Donate from './components/pages/Pages/Donate'
+import Contact from './components/pages/Pages/Contact'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
