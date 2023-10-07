@@ -1,31 +1,25 @@
-import sequelize from "index.js"
-
-const { Sequelize, DataTypes } = require('sequelize');
-
-const Production = sequelize.define('Production', {
-    title: {
-        type: DataTypes.STRING,
-        allowNull: false
-    }, 
-    description: {
-        type: DataTypes.STRING,
-    },
-    startDate: {
-        type: DataTypes.DATE,
-    },
-    endDate: {
-        type: DataTypes.DATE,
-    },
-    status: {
-        type: DataTypes.STRING
-    },
-    price: {
-        type: DataTypes.FLOAT
-    },
-    ticketLink: {
-        type: DataTypes.STRING
-    },
-    flyer: {
-        type: DataTypes.STRING
+'use strict';
+const {
+  Model
+} = require('sequelize');
+module.exports = (sequelize, DataTypes) => {
+  class Production extends Model {
+    /**
+     * Helper method for defining associations.
+     * This method is not a part of Sequelize lifecycle.
+     * The `models/index` file will call this method automatically.
+     */
+    static associate(models) {
+      // define association here
+      // this.hasMany(models.StaffMember, { as: 'StaffMembers' });
     }
-});
+  }
+  Production.init({
+    title: DataTypes.STRING,
+    description: DataTypes.STRING
+  }, {
+    sequelize,
+    modelName: 'Production',
+  });
+  return Production;
+};
