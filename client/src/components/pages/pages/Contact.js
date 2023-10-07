@@ -11,58 +11,38 @@ const Contact = () => {
     const [emailError, setEmailError] = useState('');
     const [subjectError, setSubjectError] = useState('');
     const [messageError, setMessageError] = useState('');
-    const [formError, setFormError] = useState('');
 
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     const nameRegex = /^[A-Za-z\s]+$/;
 
-    const handleInputChange = (event, setState, setError) => {
+    const handleInputChange = (event, setState, setError, validationFunc) => {
         const value = event.target.value;
         setState(value);
-        setError('');
+        
+        if (!validationFunc(value) && value !== '') {
+            setError('Invalid input.');
+        } else {
+            setError('');
+        }
     };
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    const validateName = (value) => {
+        return nameRegex.test(value);
+    };
 
-        if (!name.match(nameRegex)) {
-            setNameError('Name should only contain letters and spaces.');
-        }
-
-        if (!email.match(emailRegex)) {
-            setEmailError('Invalid email format.');
-        }
-
-        if (subject === '') {
-            setSubjectError('Subject is required.');
-        }
-
-        if (message === '') {
-            setMessageError('Message is required.');
-        }
-
-        if (name.match(nameRegex) && email.match(emailRegex) && subject !== '' && message !== '') {
-            // Form submission logic here
-        } else {
-            setFormError('Please fill out all fields.');
-        }
+    const validateEmail = (value) => {
+        return emailRegex.test(value);
     };
 
     return (
         <div className="min-h-screen flex justify-center items-start p-2">
             <div className="w-full max-w-lg mt-6">
                 <h1 className="text-center text-4xl font-bold pb-6">Contact Us:</h1>
-                {formError && (
-                    <p className="text-lg font-bold text-red-500 underline text-center mb-4">
-                        {formError}
-                    </p>
-                )}
 
                 <div>
                     <form
                         method="POST"
                         action="https://getform.io/f/208a7ae3-7e33-4238-b1f8-176309674c3d"
-                        onSubmit={handleSubmit}
                     >
                         <div className="mb-8">
                             <label className="block text-lg text-center font-bold mb-2">Name</label>
@@ -73,7 +53,7 @@ const Contact = () => {
                                 required
                                 className="block w-full px-4 py-2 rounded-xl bg-gray-200 text-black font-bold focus:ring focus:ring-sky-500"
                                 value={name}
-                                onChange={(e) => handleInputChange(e, setName, setNameError)}
+                                onChange={(e) => handleInputChange(e, setName, setNameError, validateName)}
                             />
                             {nameError && (
                                 <p className="text-lg font-bold text-red-500 underline text-center mt-2">
@@ -91,7 +71,7 @@ const Contact = () => {
                                 required
                                 className="block w-full px-4 py-2 rounded-xl bg-gray-200 text-black font-bold focus:ring focus:ring-sky-500"
                                 value={email}
-                                onChange={(e) => handleInputChange(e, setEmail, setEmailError)}
+                                onChange={(e) => handleInputChange(e, setEmail, setEmailError, validateEmail)}
                             />
                             {emailError && (
                                 <p className="text-lg font-bold text-red-500 underline text-center mt-2">
@@ -109,7 +89,7 @@ const Contact = () => {
                                 required
                                 className="block w-full px-4 py-2 rounded-xl bg-gray-200 text-black font-bold focus:ring focus:ring-sky-500"
                                 value={subject}
-                                onChange={(e) => handleInputChange(e, setSubject, setSubjectError)}
+                                onChange={(e) => handleInputChange(e, setSubject, setSubjectError, (value) => value.length > 0)}
                             />
                             {subjectError && (
                                 <p className="text-lg font-bold text-red-500 underline text-center mt-2">
@@ -127,7 +107,7 @@ const Contact = () => {
                                 required
                                 className="block w-full px-4 py-2 rounded-xl bg-gray-200 text-black font-bold focus:ring focus:ring-sky-500"
                                 value={message}
-                                onChange={(e) => handleInputChange(e, setMessage, setMessageError)}
+                                onChange={(e) => handleInputChange(e, setMessage, setMessageError, (value) => value.length > 0)}
                             ></textarea>
                             {messageError && (
                                 <p className="text-lg font-bold text-red-500 underline text-center mt-2">
