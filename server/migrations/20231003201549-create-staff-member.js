@@ -27,16 +27,6 @@ module.exports = {
           as: 'productionId',
         },
       },
-      // productionId: {
-      //   type: Sequelize.INTEGER,
-      //   references: {
-      //     model: 'Productions',
-      //     key: 'id',
-      //     as: 'productionId'
-      //   },
-      //   onUpdate: 'CASCADE',
-      //   onDelete: 'SET NULL'
-      // },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
