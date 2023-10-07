@@ -11,5 +11,11 @@ module.exports = (sequelize, DataTypes) => {
     }
   }, {});
 
+  Production.associate = (models) => {
+    Production.hasMany(models.StaffMember, {
+      foreignKey: 'productionId',
+    });
+  };
+
   return Production;
 };
