@@ -30,6 +30,9 @@ function Navbar() {
             <li>
               <Link to="/donate">Donate</Link>
             </li>
+            <li>
+              <Link to="/contact">Contact Us</Link>
+            </li>
           </ul>
         </nav>
       </header>
