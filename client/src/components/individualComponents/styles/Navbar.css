@@ -1,0 +1,46 @@
+#header {
+  background-color: #412728;
+  height: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#header a {
+  color: white;
+  text-decoration: none;
+}
+
+.navLogo {
+  border-radius: 15px;
+  width: 20rem;
+  margin-right: 6px;
+}
+
+.navLogo:hover {
+  filter: brightness(2);
+}
+
+#navlink {
+  display: flex;
+  list-style-type: none;
+}
+
+#navlink li {
+  justify-content: center;
+  margin: 1.75rem;
+}
+
+#navlink li a {
+  font-size: 1.15rem;
+}
+
+#navlink li a:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+#headerSeparator {
+  height: 0.25rem;
+  background-color: #00C9C8;
+}

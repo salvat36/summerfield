@@ -1,0 +1,94 @@
+footer {
+  background-color: #412728;
+  color: white;
+  height: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 100;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.socialIcon:hover {
+  opacity: 0.75;
+}
+
+#mailingList {
+  display: flex;
+  align-items: center;
+}
+
+#mailIcon {
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+#mailIcon:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+#mailingList a {
+  text-decoration: underline;
+}
+
+#mailingList a:hover {
+  opacity: 0.75;
+}
+
+#toTopBtn {
+  background-color: #00C9C8;
+  border-radius: 10px;
+  height: 1.75rem;
+  width: 9rem;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#toTopBtn:hover {
+  cursor: pointer;
+  font-size: 18px;
+  scale: 1.1;
+  background-color: white;
+}
+
+#socialsAndCopyright {
+  display: table-column;
+  text-align: center;
+}
+
+#socials {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.footerLogo {
+  border-radius: 15px;
+  width: 10rem;
+  margin-right: 6px;
+}
+
+.footerLogo:hover {
+  filter: brightness(2);
+}
+
+#twitterIcon {
+  border-radius: 5px;
+  height: 35px;
+  width: 35px;
+  margin: 0 6px;
+}
+
+#copyright {
+  margin: 0 0 1rem 40px;
+}
