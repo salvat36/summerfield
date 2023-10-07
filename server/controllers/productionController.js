@@ -1,4 +1,4 @@
-const { Production } = require('../models');
+const { Production, StaffMember } = require('../models');
 
 exports.getAllProductions = async (req, res) => {
     try {
