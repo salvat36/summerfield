@@ -1,4 +1,4 @@
-const { Production, StaffMember } = require('../models');
+const { Production,CrewMember } = require('../models');
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
@@ -15,19 +15,19 @@ module.exports = {
 
     for (const production of productions) {
       for (let i = 0; i < 2; i++) {
-        const staffMemberData = {
-          firstName: `Staff${i + 1}`,
+        const crewMemberData = {
+          firstName: `Crew${i + 1}`,
           lastName: `Member${i + 1}`,
           role: `Role${i + 1}`,
           productionId: production.id,
         };
-        await StaffMember.create(staffMemberData);
+        await CrewMember.create(crewMemberData);
       }
     }
   },
 
   down: async (queryInterface, Sequelize) => {
-    await StaffMember.destroy({ where: {} });
+    await CrewMember.destroy({ where: {} });
     await Production.destroy({ where: {} });
   },
 };
