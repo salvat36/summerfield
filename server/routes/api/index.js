@@ -7,6 +7,6 @@ const featureRoute = require('./features');
 router.use('/users', userRoute);
 router.use('/productions', productionRoute);
 router.use('/staffmembers', staffRoute);
-route.use('/features', featureRoute);
+router.use('/features', featureRoute);
 
 module.exports = router;
