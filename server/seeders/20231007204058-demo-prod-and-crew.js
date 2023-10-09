@@ -1,4 +1,4 @@
-const { Production,CrewMember } = require('../models');
+const { Production, CrewMember, Showtime } = require('../models');
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
@@ -22,12 +22,23 @@ module.exports = {
           productionId: production.id,
         };
         await CrewMember.create(crewMemberData);
+
+        const showtimeData = {
+          startTime: `2023-11-01 07:00:00`,
+          endTime: `2023-11-01 09:00:00`,
+          location: `123 Cherry Street`,
+          matinee: false,
+          productionId: production.id,
+        };
+        await Showtime.create(showtimeData);
       }
     }
+
   },
 
   down: async (queryInterface, Sequelize) => {
     await CrewMember.destroy({ where: {} });
     await Production.destroy({ where: {} });
+    await Showtime.destroy({ where: {} });
   },
 };
