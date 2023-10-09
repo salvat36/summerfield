@@ -2,33 +2,33 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Productions', {
+    await queryInterface.createTable('Showtimes', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      title: {
+      startTime: {
+          type: Sequelize.DATE
+      },
+      endTime: {
+        type: Sequelize.DATE
+      },
+      location: {
         type: Sequelize.STRING
       },
-      description: {
-        type: Sequelize.STRING
+      matinee: {
+        type: Sequelize.BOOLEAN
       },
-      flyer: {
-        type: Sequelize.STRING
-      },
-      images: {
-        type: Sequelize.STRING
-      },
-      status: {
-        type: Sequelize.STRING
-      },
-      ticketLink: {
-        type: Sequelize.STRING
-      },
-      price: {
-        type: Sequelize.FLOAT
+      productionId: {
+        type: Sequelize.INTEGER,
+        onDelete: 'SET NULL',
+        references: {
+          model: 'Productions',
+          key: 'id',
+          as: 'productionId',
+        },
       },
       createdAt: {
         allowNull: false,
@@ -41,6 +41,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Productions');
+    await queryInterface.dropTable('Showtimes');
   }
 };

@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = (sequelize, DataTypes) => {
-    const CrewMember = sequelize.define('CrewMember', {
+    const StaffMember = sequelize.define('StaffMember', {
     firstName: {
         type: DataTypes.STRING,
         allowNull: false
@@ -21,13 +21,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
     }
     }, {});
-
-    CrewMember.associate = (models) => {
-        CrewMember.belongsTo(models.Production, {
-            foreignKey: 'productionId',
-            onDelete: 'SET NULL',
-        });
-    };
-
-    return CrewMember;
+    
+    return StaffMember;
 };
