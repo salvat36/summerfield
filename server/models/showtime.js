@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING
     },
     matinee: {
-        type: DataTypes.BOOL
+        type: DataTypes.BOOLEAN
     }
   }, {});
 

@@ -15,6 +15,9 @@ module.exports = (sequelize, DataTypes) => {
     Production.hasMany(models.CrewMember, {
       foreignKey: 'productionId',
     });
+    Production.hasMany(models.Showtime, {
+      foreignKey: 'productionId',
+    })
   };
 
   return Production;
