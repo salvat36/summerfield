@@ -18,6 +18,12 @@ module.exports = {
       role: {
         type: Sequelize.STRING
       },
+      bio: {
+        type: Sequelize.STRING
+      },
+      headshot: {
+        type: Sequelize.STRING
+      },
       productionId: {
         type: Sequelize.INTEGER,
         onDelete: 'SET NULL',
