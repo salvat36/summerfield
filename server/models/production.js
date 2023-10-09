@@ -8,7 +8,22 @@ module.exports = (sequelize, DataTypes) => {
     },
     description: {
       type: DataTypes.STRING
-    }
+    },
+    flyer: {
+      type: DataTypes.STRING
+    },
+    images: {
+      type: DataTypes.STRING
+    },
+    status: {
+      type: DataTypes.STRING
+    },
+    ticketLink: {
+      type: DataTypes.STRING
+    },
+    price: {
+      type: DataTypes.FLOAT
+    },
   }, {});
 
   Production.associate = (models) => {
