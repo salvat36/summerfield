@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const staffController = require('../../controllers/staffController');
+const crewController = require('../../controllers/crewController');
 
 // Define your routes here
-router.get('/', staffController.getAllStaff);
+router.get('/', crewController.getAllCrew);
 
 module.exports = router;
 
