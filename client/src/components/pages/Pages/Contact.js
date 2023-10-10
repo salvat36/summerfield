@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import 'tailwindcss/tailwind.css';
 
 const Contact = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [subject, setSubject] = useState('');
-    const [message, setMessage] = useState('');
+
+    
+    const [inputs, setInputs] = useState({
+        name:"",
+        email:"",
+        subject:"",
+        message:"",
+    })
 
     const [nameError, setNameError] = useState('');
     const [emailError, setEmailError] = useState('');
@@ -15,15 +19,11 @@ const Contact = () => {
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     const nameRegex = /^[A-Za-z\s]+$/;
 
-    const handleInputChange = (event, setState, setError, validationFunc) => {
-        const value = event.target.value;
-        setState(value);
-        
-        if (!validationFunc(value) && value !== '') {
-            setError('Invalid input.');
-        } else {
-            setError('');
-        }
+    const handleInputChange = (event) => {
+        setInputs(
+            {  ...inputs,
+            [event.target.name]: event.target.value,
+        })
     };
 
     const validateName = (value) => {
@@ -52,8 +52,8 @@ const Contact = () => {
                                 autoComplete="off"
                                 required
                                 className="block w-full px-4 py-2 rounded-xl bg-gray-200 text-black font-bold focus:ring focus:ring-sky-500"
-                                value={name}
-                                onChange={(e) => handleInputChange(e, setName, setNameError, validateName)}
+                                value={inputs.name}
+                                onChange={handleInputChange}
                             />
                             {nameError && (
                                 <p className="text-lg font-bold text-red-500 underline text-center mt-2">
@@ -65,13 +65,13 @@ const Contact = () => {
                         <div className="mb-8">
                             <label className="block text-lg text-center font-bold mb-2">Email</label>
                             <input
-                                type="email"
-                                name="email"
-                                autoComplete="on"
-                                required
-                                className="block w-full px-4 py-2 rounded-xl bg-gray-200 text-black font-bold focus:ring focus:ring-sky-500"
-                                value={email}
-                                onChange={(e) => handleInputChange(e, setEmail, setEmailError, validateEmail)}
+                            type="email"
+                            name="email"
+                            autoComplete="on"
+                            required
+                            className="block w-full px-4 py-2 rounded-xl bg-gray-200 text-black font-bold focus:ring focus:ring-sky-500"
+                            value={inputs.email} 
+                            onChange={handleInputChange}
                             />
                             {emailError && (
                                 <p className="text-lg font-bold text-red-500 underline text-center mt-2">
@@ -88,8 +88,8 @@ const Contact = () => {
                                 autoComplete="off"
                                 required
                                 className="block w-full px-4 py-2 rounded-xl bg-gray-200 text-black font-bold focus:ring focus:ring-sky-500"
-                                value={subject}
-                                onChange={(e) => handleInputChange(e, setSubject, setSubjectError, (value) => value.length > 0)}
+                                value={inputs.subject}
+                                onChange={handleInputChange}
                             />
                             {subjectError && (
                                 <p className="text-lg font-bold text-red-500 underline text-center mt-2">
@@ -106,8 +106,8 @@ const Contact = () => {
                                 autoComplete="off"
                                 required
                                 className="block w-full px-4 py-2 rounded-xl bg-gray-200 text-black font-bold focus:ring focus:ring-sky-500"
-                                value={message}
-                                onChange={(e) => handleInputChange(e, setMessage, setMessageError, (value) => value.length > 0)}
+                                value={inputs.message}
+                                onChange={handleInputChange}
                             ></textarea>
                             {messageError && (
                                 <p className="text-lg font-bold text-red-500 underline text-center mt-2">
