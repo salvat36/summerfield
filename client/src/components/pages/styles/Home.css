@@ -1,147 +1,143 @@
 #homeContainer {
-  background-color: #412728;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 200vh;
+    background-color: #412728;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200vh;
 }
 
 #topImageContainer {
-  background-image: url('/home/salvat/group_projects/summerfield/client/public/landingPageTestPic.jpg');
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
-  margin-top: 3rem;
+    background-image: ('/client/public/media/landingPageTestPic.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: 3rem;
 }
 
 #topTextLeft {
-  background-color: rgba(20, 19, 20, 0.783);
-  height: 80%;
-  width: 40%;
-  /* padding: 1rem; */
-  justify-content: center;
+    background-color: rgba(20, 19, 20, 0.783);
+    height: 80%;
+    width: 40%;
+    /* padding: 1rem; */
+    justify-content: center;
 }
 
 #introText {
   /* background-color: rgb(242, 142, 11); */
-  text-align: center;
-  font-size: 72px;
+    text-align: center;
+    font-size: 72px;
 }
-
+client/public/LatestNewsTestImg.jpg
 #topTextRight {
-  background-color: rgba(20, 19, 20, 0.783);
-  height: 80%;
-  width: 40%;
-  /* padding: 1rem; */
-  text-align: center;
-  line-height: 45px;
+    background-color: rgba(20, 19, 20, 0.783);
+    height: 80%;
+    width: 40%;
+    /* padding: 1rem; */
+    text-align: center;
+    line-height: 45px;
 }
 
 #bottomContainer {
-  background-color: rgba(20, 19, 20, .5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
+    background-color: rgba(20, 19, 20, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
 }
 
-
-
 #bottomLeft {
-  height: 80%;
-  width: 40%;
-  padding: 1rem;
-  text-align: center;
+    height: 80%;
+    width: 40%;
+    padding: 1rem;
+    text-align: center;
 }
 
 #newsImage {
-  height: 200px;
-  width: 200px;
+    height: 200px;
+    width: 200px;
 }
 
 #bottomRight {
-  height: 80%;
-  width: 40%;
-  padding: 1rem;
-  text-align: center;
+    height: 80%;
+    width: 40%;
+    padding: 1rem;
+    text-align: center;
 }
 
 #upcomingProductions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #headerSeparator {
-  height: 0.25rem;
-  background-color: #00C9C8;
+    height: 0.25rem;
+    background-color: #00C9C8;
 }
 
 .production {
-  width: 500px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  position: relative;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    position: relative;
 }
 
 .productionDetails {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-
 .ticketBtn {
-  background-color:#00C9C8;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  margin: 10px;
-  padding: 5px 10px;
-  border-radius: 10px;
-  height: 1.75rem;
-  width: 9rem;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  border: none;
-  cursor: pointer;
+    background-color:#00C9C8;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    height: 1.75rem;
+    width: 9rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .ticketBtn:hover {
-  filter: brightness(2);
+    filter: brightness(2);
 }
 
 .www {
-  color:#00C9C8
+    color:#00C9C8
 }
 
 span {
-  color: white;
+    color: white;
 }
 
 h1 {
-  color: white
+    color: white
 }
 
 h2 {
-  color: white;
-  margin: 0;
+    color: white;
+    margin: 0;
 }
 
 h3 {
-  color: white
+    color: white
 }
 
 p {
-  color: white
+    color: white
 }

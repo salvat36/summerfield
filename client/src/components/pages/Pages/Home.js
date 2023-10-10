@@ -37,7 +37,7 @@ function Home() {
             <p>Upcoming Auditions for XYZ Production \n Roles Available - 15</p>
             <img
               id="newsImage"
-              src="LatestNewsTestImg.jpg"
+              src={process.env.PUBLIC_URL + "/media/LatestNewsTestImg.jpg"}
               alt="ADD MEANINGFUL ALT WITH DATA HERE"
             ></img>
             <p>
