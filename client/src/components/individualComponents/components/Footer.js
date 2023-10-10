@@ -10,7 +10,7 @@ function Footer() {
       behavior: 'smooth',
     });
   };
-
+//! we will need to create the mailing list via a service + use that service to create an embeded form
   return (
     <footer>
       <div id='mailingList'>
@@ -18,6 +18,7 @@ function Footer() {
           <img src={process.env.PUBLIC_URL + "media/mail-48.png"} alt="mail icon" id='mailIcon'/>
         </div>
         
+
         <div>For updated News & Events <br/> Join our mailing list <a href="#">here</a></div>
         
       </div>
