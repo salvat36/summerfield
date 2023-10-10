@@ -1,12 +1,12 @@
-const { User } = require('../models');
+const { Showtime } = require('../models');
 
-exports.getAllUsers = async (req, res) => {
+exports.getAllShowtimes = async (req, res) => {
     try {
-        const users = await User.findAll();
+        const showtimes = await Showtime.findAll();
         res.status(200).json({
             success: true,
-            message: 'Users retrieved successfully',
-            users
+            message: 'Show times retrieved successfully',
+            showtimes
         })
     } catch (error) {
         console.error(error);

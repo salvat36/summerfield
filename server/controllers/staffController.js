@@ -1,12 +1,13 @@
-const { Production, CrewMember } = require('../models');
+const { StaffMember } = require('../models');
 
-exports.getAllProductions = async (req, res) => {
+exports. getAllStaff = async (req, res) => {
     try {
-    const prods = await Production.findAll();
+    const staff = await StaffMember.findAll({
+    });
     res.status(200).json({
         success: true,
-        message: 'Productions retrieved successfully',
-        prods,
+        message: 'Staff Member retrieved successfully',
+        staff,
     });
     } catch (error) {
     console.error(error);

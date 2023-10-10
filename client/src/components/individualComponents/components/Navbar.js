@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../App'
-import './Navbar.css'
+import '../../../App'
+import '../styles/Navbar.css'
 
 
 function Navbar() {
@@ -10,7 +10,7 @@ function Navbar() {
       <header id="header">
         <div>
           <Link to="/">
-            <img src={process.env.PUBLIC_URL + "/summerfield-logo.png"} alt="summerfield logo" class="navLogo"></img>
+            <img src={process.env.PUBLIC_URL + "/media/summerfield-logo.png"} alt="summerfield logo" class="navLogo"></img>
           </Link>
         </div>
         <nav id="navbar">
@@ -29,6 +29,9 @@ function Navbar() {
             </li>
             <li>
               <Link to="/donate">Donate</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact Us</Link>
             </li>
           </ul>
         </nav>

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Audition.css'
+import '../styles/Audition.css'
 
 function Audition() {
   return (

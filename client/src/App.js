@@ -1,11 +1,12 @@
 import './App.css'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import About from './components/About'
-import Home from './components/Home'
-import Volunteer from './components/Volunteer'
-import Audition from './components/Audition'
-import Donate from './components/Donate'
+import Navbar from './components/individualComponents/components/Navbar'
+import Footer from './components/individualComponents/components/Footer'
+import About from './components/pages/Pages/About'
+import Home from './components/pages/Pages/Home'
+import Volunteer from './components/pages/Pages/Volunteer'
+import Audition from './components/pages/Pages/Audition'
+import Donate from './components/pages/Pages/Donate'
+import Contact from './components/pages/Pages/Contact'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/audition" element={<Audition />} />
         <Route path="/about" element={<About />} />
         <Route path="/donate" element={<Donate />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer/>
     </Router>
